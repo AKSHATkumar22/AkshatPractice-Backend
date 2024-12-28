@@ -36,6 +36,12 @@ app.get("/twitter", (req, res) => {
   res.send("Akshat Kumar");
 });
 
+// hum yaha par ek aur naya app kon call karenge as a practice
+app.get("/instagram", (req, res) => {
+  // ban gaya mera app send version jisko fetch karega listen ka madad sa..!!!
+  res.send("Hello How are You..!!");
+});
+
 // yaha listen par humne sikha hai kii kaha par se woh file kon utha kar yaha par shift karega
 // aur yeh process.env.PORT file se call karwa dega
 app.listen(process.env.PORT, () => {
